@@ -1,0 +1,125 @@
+/* Color variables theme */
+:root {
+    --primary-color: #3081D0;
+    --secondary-color: #6DB9EF;
+    --tertiary-color: #F4F27E;
+    --quaternary-color: #FFF5C2;
+}
+
+/* General styling */
+a{
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+/* reset body margins/padding */
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* navbar styling */
+
+.navbar {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+}
+
+.navbar-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    color: var(--quaternary-color);
+}
+
+.navbar-logo > img {
+    width: 36px;
+    height: auto;
+}
+
+.navbar-links{
+    display: flex;
+}
+
+.navbar-link{
+    padding: 0 1rem;
+    list-style: none;
+}
+
+.navbar-link {
+    text-decoration: none;
+}
+
+.navbar-link > a:hover {
+    color: var(--quaternary-color);
+}
+
+/* We only apply this on each page links inside html, so it has a different color */
+.active {
+    color: var(--secondary-color);
+}
+
+/* Home page */
+
+.background-video{
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 30%;
+    right: 0;
+    z-index: 1;
+    height: 150px;
+    background-color: var(--primary-color);
+    padding: 8px;
+    text-align: center;;
+}
+
+.details > h3 {
+    color: var(--quaternary-color);
+}
+
+.weather{
+    font-weight: bold;
+}
+
+.opening-hours {
+    color: white;
+    font-weight: bold;
+}
+
+.ticket-price{
+    color: white;
+    font-weight: bold;
+}
+
+.buy-ticket-button{
+    position: absolute; 
+    left: 0; 
+    right: 0;
+    bottom: 5rem;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100px; /* Need a specific value to work */
+
+    background-color: var(--secondary-color);
+    color: var(--quaternary-color);
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+}

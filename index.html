@@ -1,0 +1,68 @@
+<!-- THIS IS THE MAIN/INDEX PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- THIS IS THE HEAD SECTION WITH THE METADATA -->
+
+    <head>
+        <title>43 Theme Park</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="authors" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="stylesheet" href="Stylesheets/sheet.css">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <!-- THIS IS THE LOGO OF THE PAGE -->
+                <img src="Media/images/logo.png" alt="Logo" width="100" height="100">
+                <span>43 Theme Park</span>
+            </div>
+            <!-- THIS IS WHERE WE WILL MAKE A LIST TO CREATE THE NAVBAR -->
+            <ul class="navbar-links">
+                <!-- Create an visual effect for when a page is selected-->
+                <li class="navbar-link"><a class="active" href="index.html">Home</a></li>
+                <li class="navbar-link"><a href="Attractions.html">Attractions</a></li>
+                <li class="navbar-link"><a href="Reviews.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <main style="overflow-wrap: unset;">
+            <!-- THIS IS THE MAIN PART OF THE PAGE
+
+                It will have the following: 
+                - Video of the theme park;
+                - Buy Ticket button;
+                - Weather forcast;
+                - Opening Hours;
+                - Ticket Prices;
+
+            -->
+            <!-- autoplay so the video starts playing automatically when the page loads and loop so it doesn't stop-->
+            <!-- Video by <a href="https://pixabay.com/users/nsidra259-21931834/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=84738">Sidra Nadeem</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=84738">Pixabay</a> -->
+            <div class="background-video">
+                <video height="100%" autoplay loop>
+                    <source src="Media/videos/video_720p.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="details">
+                <div class="weather"><a target="_blank" href="https://weather.com/weather/today/l/aac619af0e4a1f0ffbab44e0cd35501d61e2c5d4337767432f5cbac90957d7a1">Today's Weather</a></div>
+                <div class="opening-hours">Opening Hours: <br>6AM - 8PM Everyday</br></div>
+                <div class="ticket-price">Ticket price: £20 / person</div>
+            </div>
+
+            <!-- The "buy ticket" button below will be placed inside a box-->
+            <a href="#" class="buy-ticket-button">Buy Ticket</a>
+        </main>
+        <footer>
+            <!-- THIS IS THE FOOTER OF THE PAGE 
+            It will have some extra information:
+            - contact info;
+            - social media logos;
+            -->
+        </footer>
+    </body>
+
+</html>
